@@ -82,7 +82,7 @@ class ChatApp:
         try:
             if not user_message or not message_type:
                 raise ValueError("User message and message type are required.")
-            instruction = f"Craft a response that's got the {message_type} vibe, for the following message: {user_message}. Remember, we're going for natural, charismatic, and human-like - let's not write a novel here, brevity is the soul of wit!"
+            instruction = f"Generate a {message_type} response to the following message: {user_message}"
 
             context = {
                 'user_profile': self.user_profile,
